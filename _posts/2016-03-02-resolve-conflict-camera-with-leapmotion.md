@@ -1,9 +1,9 @@
 ---
 layout: post
 section-type: post
-title: 내가 원하는 카메라를 자바스크립트로 지정해서 사용 할 수 없을까?
+title: 웹에서 특정 카메라 소스를 지정해서 사용 할 수 없을까?
 category: Category
-tags: [ 'conflict', 'leapmotion', 'webcam', 'camera', 'javascript', 'MediaStreamTrack', 'getSources', 'multiple camera', '립 모션', '충돌' ]
+tags: [ 'issue', 'conflict', 'leapmotion', 'webcam', 'camera', 'javascript', 'MediaStreamTrack', 'getSources' ]
 ---
 
 [립 모션][1]을 가지고 업무를 하던 중 웹 페이지에서 카메라와 립모션을 같이 사용 할 수 없는 문제가 있어서<br>
@@ -12,8 +12,8 @@ tags: [ 'conflict', 'leapmotion', 'webcam', 'camera', 'javascript', 'MediaStream
 ---
 
 ### 이슈 상황
-[립 모션][1] SDK 를 깔고 웹 브라우저에 로드를 한 뒤 립 모션 정상 작동하는 것 확인.
-이후 아래와 같이 카메라를 연동하여 작업을 하려고 하는데 카메라 인식이 안되는 현상 발생.
+[립 모션][1] SDK 를 깔고 웹 브라우저에 로드를 한 뒤 립 모션 정상 작동하는 것 확인하고<br>
+이후 아래와 같이 카메라를 연동하여 작업을 하려고 하는데 카메라 인식이 안되는 현상 발생하였다.
 
 ```javascript
 navigator.webkitGetUserMedia({
@@ -31,7 +31,8 @@ navigator.webkitGetUserMedia({
 
 ### 이슈 원인
 [립 모션][1]이 자체적으로 카메라 센서를 가지고 활동을 모니터링 하는데 웹에서 `navigator.webkitGetUserMedia`를 사용하면
-기본적으로 하나의 카메라를 인식해서 [립 모션][1]을 인식할 경우 카메라가 작동하지 않는 상황이다. 반대로 카메라를 인식할 경우 [립 모션][1]이 정상작동하지 않는다.
+브라우저는 하나의 카메라만 인식해서 [립 모션][1]을 인식할 경우 카메라가 작동하지 않는 상황이다. <br>
+반대로 카메라를 인식할 경우 [립 모션][1]이 정상작동하지 않는다.
 
 ---
 
@@ -80,8 +81,8 @@ navigator.webkitGetUserMedia({
 ---
 
 ### 결론
-이슈는 [립 모션][1]과의 연동에서 발생했지만 여러개의 카메라를 하나의 `document` 에 출력하길 원할때(CCTV 같은..) 원하는 소스를 선택해서
-출력하는게 가능할 것 같다. 문제는 브라우저 서포트가 생각보다 많지 않으니 꼭 지원하는 브라우저를 확인 후 사용해야 한다.
+이슈는 [립 모션][1]과의 연동에서 발생했지만 여러개의 카메라를 페이지 하나에서 출력하길 원할때(CCTV 화면 같은..) 원하는 소스를 선택해서
+출력하는게 가능할 것 같다. 문제는 브라우저 서포트가 생각보다 많지 않으니 꼭 **지원하는 브라우저**를 확인 후 사용해야 한다.
 
 [1]: https://www.leap-motion.kr/ '립 모션'
 [2]: https://developer.mozilla.org/ko/docs/Web/API/MediaStreamTrack 'MediaStreamTrack'
