@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: \[Chrome DevTools\]Time Line Panel Overview
+title: Chrome DevTools Time Line Panel Overview
 category: Category
 tags: [ 'chrome', 'performance', 'tools', 'timeline' ]
 ---
