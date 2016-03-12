@@ -1,10 +1,10 @@
 ---
 layout: post
 section-type: post
-title: Chrome DevTools: Time Line Panel Overview
+title: \[Chrome DevTools\]Time Line Panel Overview
 category: Category
 tags: [ 'chrome', 'performance', 'tools', 'timeline' ]
-------------------------------------------------------
+---
 
 기본적으로 웹 서비스를 개발하고 나면 [YSlow][3] 나 [PageSpeed][4] 를 활용하여 기본적인 성능 측정 및 개선을 하고 
 이후 크롬 개발자 도구의 네트워크 탭을 보면서 불필요한 리퀘스트나 불필요하게 큰 리소스를 정리하는 방법을 사용했다. 
