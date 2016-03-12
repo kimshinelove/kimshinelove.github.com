@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: 크롬 타임라인(Timeline) 도구 살펴보기
+title: Chrome DevTools: Time Line Panel Overview
 category: Category
 tags: [ 'chrome', 'performance', 'tools', 'timeline' ]
 ------------------------------------------------------
