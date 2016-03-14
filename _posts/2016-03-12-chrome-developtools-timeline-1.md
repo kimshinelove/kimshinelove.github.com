@@ -169,9 +169,15 @@ Self Time 적게 걸렸다면 그 내부에 있는 콜 스택중 많이 걸리�
 --- 
 
 여기까지 크롬 개발자 도구의 타임라인 패널에 대한 각 부분을 살펴 보았다.<br>
-다음 포스팅은 내가 업무를 할때 타임라인을 보면서 어떻게 성능 분석을 하는지 포스팅을 하도록 하겠다.
+[다음 포스팅][5]은 내가 업무를 할때 타임라인을 보면서 어떻게 성능 분석을 하는지 포스팅을 하도록 하겠다.
+
+---
+
+### 관련포스팅
+[Performance Profiling with the Timeline][5]
  
 [1]: https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/timeline-tool?hl=en 'How to Use the Timeline Tool'
 [2]: https://developers.google.com/web/fundamentals/performance/rendering/ 'jank'
 [3]: http://yslow.org/ 'YSLOW'
 [4]: https://developers.google.com/speed/pagespeed/ 'PageSpeed'
+[5]: https://kimshinelove.github.io/category/2016/03/13/performance-profiling-with-the-timeline.html 'Performance Profiling with the Timeline'
